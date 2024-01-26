@@ -28,7 +28,7 @@ class TXT2IMG:
         self.gpu_id = 'cuda:' + str(gpu_id)
 
         self.pipe = Prompt2PromptXLPipeline.from_pretrained(
-            "./models/sdxl/dreamshaperxl_v1",
+            "./models/sdxl/sdxlbase_v1",
             torch_dtype=torch.float16,
             variant="fp16",
             use_safetensors=True,
